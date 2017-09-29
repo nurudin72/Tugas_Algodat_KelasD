@@ -2,7 +2,7 @@ package Algodatkelas;
 
 import java.lang.reflect.Array;
 
-public class ChangeArrayLengthh {
+public class ChangeArrayLength2d {
     public static Object[] changeLength1D(Object [] a, int n, int newLength){
 
         if (n> newLength){

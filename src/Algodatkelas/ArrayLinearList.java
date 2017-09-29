@@ -10,7 +10,7 @@ public class ArrayLinearList implements LinearList {
     public ArrayLinearList(int capacity) {
         this.capacity = capacity;
         element = new Object[capacity];
-        element = ChangeArrayLengthh.changeLength1D(element, 2 * capacity);
+        element = ChangeArrayLength2d.changeLength1D(element, 2 * capacity);
         index = 0;
     }
 
