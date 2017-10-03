@@ -4,8 +4,11 @@ public class Driver {
 
     public static void main(String[] args) {
         ArrayLinearList x = new ArrayLinearList();
-        System.out.println("Soal no.4 Add");
+       
+        Object[] y = new Object[20];
+        
         System.out.println("--------------------------------------------");
+        System.out.println("Soal no.4 Add");
         x.add(0, "ab");
         x.add(1, "bc");
         x.add(2, "cd");
@@ -26,22 +29,32 @@ public class Driver {
         System.out.println("Setelah method remove dijalankan = " + x.toString());
         System.out.println("");
         
-        System.out.println("Soal No.5 Trim To Size");
         System.out.println("--------------------------------------------");
+        System.out.println("Soal No.5 Trim To Size");
         System.out.println("Panjang Array : " + x.size());
         System.out.println("Kapasitas Array sebelum di trim : " + x.element.length);
         x.trimToSize();
         System.out.println("Kapasitas Array setelah di trim : " + x.element.length);
         
-        System.out.println("Soal No.6 Set Size");
         System.out.println("--------------------------------------------");
+        System.out.println("Soal No.6 Set Size");
         System.out.print("Ukuran element di set menjadi: ");
         x.setSize(8);
         System.out.println(x.element.length);
-        System.out.println("");
-        
-        System.out.println("Soal No.8 Clear");
+        System.out.println(x.toString());
         System.out.println("--------------------------------------------");
+        System.out.println("Soal No.9 Remove Range");
+        System.out.print("Remove index 1-4: ");
+        x.removeRange(1, 4);
+        System.out.println(x.element.length);
+        System.out.println(x.toString());
+        System.out.println("--------------------------------------------");
+        System.out.println("Soal No.12 Clone");
+        System.out.print("Hasil dari Clone :");
+       
+        System.out.println("Isi objek y : " + x.clone(y));
+        System.out.println("--------------------------------------------");
+        System.out.println("Soal No.8 Clear");
         x.clear();
         System.out.println(x.toString());
     }

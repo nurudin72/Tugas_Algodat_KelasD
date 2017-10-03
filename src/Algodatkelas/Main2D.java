@@ -11,7 +11,7 @@ public class Main2D {
             {"Bima","Juara 1" ,"Kelas A"}
         };
         
-        Object[][] ganti = ChangeArrayLength.changeLength2D(data, 6, 4);
+        Object[][] ganti = ChangeArrayLength2D.changeLength2D(data, 6, 4);
         
         System.out.println("Length   : "+ganti.length);
         System.out.println("Length 2 : "+ganti[0].length);

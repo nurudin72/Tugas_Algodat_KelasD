@@ -10,7 +10,7 @@ public class ArrayLinearList implements LinearList {
     public ArrayLinearList(int capacity) {
         this.capacity = capacity;
         element = new Object[capacity];
-        element = ChangeArrayLength2d.changeLength1D(element, 2 * capacity);
+        element = ChangeArrayLength1D.changeLength1D(element, 2 * capacity);
         index = 0;
     }
 
@@ -136,4 +136,21 @@ public class ArrayLinearList implements LinearList {
         
         return new String(s);
     }
+        @Override
+    public void removeRange(int fromIndex, int toIndex) {
+//        count++;
+        int pindah = size - toIndex;
+        System.arraycopy(element, toIndex, element, fromIndex, pindah);
+        int newSize = size - (toIndex - fromIndex);
+        while (size != newSize) {
+            element[--size] = null;
+
+        }
+    }
+    @Override
+     public Object clone(Object [] a){  
+        a = new Object[size];
+        a = element.clone();
+        return toString();
+        }
 }

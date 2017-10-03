@@ -1,6 +1,6 @@
 package Algodatkelas;
 
-public class ChangeArrayLength {
+public class ChangeArrayLength2D {
 
     public static Object[][] changeLength2D(Object[][] a, int n, int m, int newLength, int newLength2) {
 
